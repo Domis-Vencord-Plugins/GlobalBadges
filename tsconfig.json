@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "jsx": "preserve",
+        "baseUrl": "./node_modules/@vencord/types",
+        "paths": {
+            "@main/*": ["./main/*"],
+            "@api/*": ["./api/*"],
+            "@components/*": ["./components/*"],
+            "@utils/*": ["./utils/*"],
+            "@shared/*": ["./shared/*"],
+            "@webpack/types": ["./webpack/common/types"],
+            "@webpack/common": ["./webpack/common"],
+            "@webpack": ["./webpack/webpack"]
+        }
+    }
+}
