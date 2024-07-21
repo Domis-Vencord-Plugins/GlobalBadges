@@ -40,9 +40,8 @@ function BadgeComponent({ name, img }: { name: string, img: string; }) {
                     {...tooltipProps}
                     src={img}
                     style={{
-                        width: "22px",
-                        height: "22px",
-                        margin: "0 2px",
+                        width: "20px",
+                        height: "20px",
                         transform: name.includes("Replugged") ? "scale(0.9)" : null
                     }}
                 />
