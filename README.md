@@ -11,3 +11,6 @@
 
 ## Installing
 If you don't know how to install custom Plugins, follow [this Guide](https://docs.vencord.dev/installing/custom-plugins/)
+
+### Adding Custom Badges
+To display custom badges, you can either use supported client mods that offer custom badges (e.g., becoming a Vencord Sponsor) or add your badges via [BadgeVault](https://github.com/WolfPlugs/BadgeVault#how-to-add-your-badge). Please note that it may take up to one hour for your badge to appear after it has been approved by the BadgeVault review team.
