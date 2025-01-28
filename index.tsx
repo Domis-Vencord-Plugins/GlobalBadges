@@ -1,4 +1,4 @@
-import { addBadge, BadgePosition, BadgeUserArgs, ProfileBadge, removeBadge } from "@api/Badges";
+import { addProfileBadge, BadgePosition, BadgeUserArgs, ProfileBadge, removeProfileBadge } from "@api/Badges";
 import definePlugin, { OptionType } from "@utils/types";
 import { React, Tooltip } from "@webpack/common";
 
@@ -104,8 +104,8 @@ export default definePlugin({
     description: "Adds global badges from other client mods",
     authors: [{ name: "domi.btnr", id: 354191516979429376n }],
 
-    start: () => addBadge(Badge),
-    stop: () => removeBadge(Badge),
+    start: () => addProfileBadge(Badge),
+    stop: () => removeProfileBadge(Badge),
 
     options: {
         showPrefix: {
