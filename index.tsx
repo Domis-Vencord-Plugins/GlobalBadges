@@ -1,6 +1,7 @@
 import { addProfileBadge, BadgePosition, BadgeUserArgs, ProfileBadge, removeProfileBadge } from "@api/Badges";
 import definePlugin, { OptionType } from "@utils/types";
 import { React, Tooltip } from "@webpack/common";
+import type { JSX } from "react";
 
 type CustomBadge = string | {
     name: string;
@@ -51,7 +52,7 @@ function BadgeComponent({ name, img }: { name: string, img: string; }) {
 };
 
 function GlobalBadges({ userId }: BadgeUserArgs) {
-    const [badges, setBadges] = React.useState<BadgeCache["badges"]>({});
+    const [badges, setBadges] = React.useState<BadgeCache["badges"] | undefined>({});
     React.useEffect(() => {
         fetchBadges(userId)
             .then(setBadges);
@@ -92,6 +93,7 @@ function GlobalBadges({ userId }: BadgeUserArgs) {
 };
 
 const Badge: ProfileBadge = {
+    id: "global_badges_profile_badge",
     component: GlobalBadges,
     position: BadgePosition.START
 };
